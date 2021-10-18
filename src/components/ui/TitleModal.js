@@ -1,5 +1,6 @@
 import React from 'react'
 import { DialogTitle } from '@material-ui/core'
+import './ui.css'
 
 export const TitleModal = ({title,onClose}) => {
   return (
