@@ -14,3 +14,27 @@ body, div, a{
 .ds-bold{
   font-weight: bold;
 }
+
+.ds-title-modal{
+  position: relative;
+  text-align: center;
+}
+
+/* INICIO - Estilos para el titulo de las modales */
+.ds-close-modal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 16px;
+  margin-right: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  background-color: white;
+}
+
+.ds-close-modal:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* FIN */

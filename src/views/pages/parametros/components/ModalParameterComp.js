@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField, Grid, Backdrop } from '@material-ui/core';
 import { Form, Formik } from 'formik';
+import { TitleModal } from 'components/ui/TitleModal';
 
 export const ModalParameterComp = ({ open, onClose, savaParameter, editParameter, data, validatinsFields }) => {
   const initData = data.datos;
@@ -24,8 +25,7 @@ export const ModalParameterComp = ({ open, onClose, savaParameter, editParameter
           {
             ({ handleChange, errors, values }) =>
               <Form autoComplete="off" noValidate>
-                <DialogTitle>{data.isEdit ? 'Modificar parámetro' : 'Nuevo parámetro'}</DialogTitle>
-                <Button color="primary" onClick={onClose}>X</Button>
+                <TitleModal title={data.isEdit ? 'Modificar parámetro' : 'Nuevo parámetro'} onClose={onClose} />
                 <DialogContent>
                   <Grid container spacing={2}>
 
