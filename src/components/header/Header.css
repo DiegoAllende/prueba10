@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px 0px;
+}
+
+.header-titulo{
+  margin: 0;
+}
+
+.header .header-logo{
+  border-radius: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.header-user{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-user span{
+  margin-right: 15px;
+}
+
+.header .header-user-avatar{
+  width: 50px;
+  height: 50px;
+}
